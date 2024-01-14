@@ -22,3 +22,6 @@ mkdir /srv/alldata/deluge/config
 
 docker-compose up
 # ssh
+sudo apt install openssh-server
+sudo ufw enable
+sudo ufw allow ssh
