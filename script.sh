@@ -1,12 +1,17 @@
 # Install docker
 sudo apt-get update
-sudo apt install docker.io -y
+sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+apt-cache policy docker-ce
+sudo apt install docker-ce -y
 # FTP server
 sudo apt install vsftpd
 sudo systemctl start vsftpd
 sudo systemctl enable vsftpd
 sudo useradd -m akshat_ftp
 sudo passwd akshat_ftp
+# save password here for user
 sudo mkdir /srv/alldata
 sudo usermod -d /srv/alldata akshat_ftp
 sudo systemctl restart vsftpd.service

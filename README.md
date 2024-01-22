@@ -11,3 +11,8 @@ http://localhost:8096/
 
 SSH tunnel to this server
 localhost:8081
+
+Steps:
+1. Install Ubuntu 22 desktop OS
+2. TBD
+
