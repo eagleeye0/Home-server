@@ -19,7 +19,7 @@ sudo usermod -d /srv/alldata akshat_ftp
 sudo chmod a+w /srv/alldata
 sudo su
 echo "enable_write" >> /etc/vsftpd.conf
-su ubuntu
+su akshat
 sudo systemctl restart vsftpd.service
 # Jellyfin
 sudo docker pull jellyfin/jellyfin

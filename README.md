@@ -14,5 +14,8 @@ localhost:8081
 
 Steps:
 1. Install Ubuntu 22 desktop OS
-2. TBD
+2. Setup wifi
+3. Create user with name `akshat`
+3. Go to eagleeye0 repo and clone docker-compose file to home.
+
 
